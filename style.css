@@ -12,6 +12,11 @@ body {
   font: 16px/1.5 sans-serif;
 }
 
+.kontejner {
+  display: flex;
+  flex-direction: column;
+}
+
 .sloupec {
   padding: 30px;
   font-size: 24px;
@@ -27,6 +32,18 @@ body {
 }
 .sloupec:nth-child(3) {
   background-color: #2ecc71;
+}
+
+@media (min-width: 800px) {
+
+  .kontejner {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sloupec {
+    width: 100%;
+  }
 }
 
 /*
